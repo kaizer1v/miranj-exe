@@ -1,0 +1,25 @@
+{
+  "name": "miranj-exe",
+  "version": "1.0.0",
+  "description": "a code exercise for miranj",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaizer1v/miranj-exe.git"
+  },
+  "keywords": [
+    "miranj",
+    "flask",
+    "calendar-ui",
+    "events"
+  ],
+  "author": "kaizer1v",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaizer1v/miranj-exe/issues"
+  },
+  "homepage": "https://github.com/kaizer1v/miranj-exe#readme"
+}
