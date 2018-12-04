@@ -3,22 +3,77 @@
 <head>
   <title>Miranj Exercise</title>
   <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
   <div class="container-fluid">
-    <h1>Hello World</h1>
+    <div class="month">      
+      <ul>
+        <li class="prev">&#10094;</li>
+        <li class="next">&#10095;</li>
+        <li>August <br/><span style="font-size:18px">2017</span></li>
+      </ul>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-container left">
+        <div class="content">
+          <h2>1st</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content">
+          <h2>7th</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content">
+          <h2>14th</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content">
+          <h2>15th</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content">
+          <h2>16th</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content">
+          <h2>25th</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
   
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 <!-- <script type="text/javascript" src="node_modules/popper.js/dist/popper.min.js"></script> -->
-<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>\
 <script type="text/javascript">
+(function(global) {
+  let document = global.document
+
+  if(global.fetch) {
+    fetch('events.json').then(resp => resp.json())
+      .then(function(events) {
+        console.log(events)
+      })
+  } else {
+    console.log('browser support for fetch not available')
+  }
+})(window)
   
-  fetch('events.json').then(resp => resp.json())
-    .then(function(events) {
-      console.log(events)
-    })
 
 </script>
 </body>
