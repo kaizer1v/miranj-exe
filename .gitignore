@@ -9,8 +9,9 @@
 # Ignore byte-compiled / optimised / DLL files
 *.py[cod]
 
-# .yml data files
+# .yml and .json data files
 *.yml
+*.json
 
 # Ignore log files
 logs/
